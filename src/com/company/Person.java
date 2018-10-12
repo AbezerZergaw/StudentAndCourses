@@ -1,5 +1,8 @@
 package com.company;
 
+import java.util.ArrayList;
+
+
 public class Person {
 
 
@@ -9,8 +12,22 @@ public class Person {
     private int idNum;
 
 
-    public Person() {
+    private ArrayList<Student> students;
 
+
+    public ArrayList<Student> getStudents() {
+        return students;
+    }
+
+    public void setStudents(ArrayList<Student> students) {
+        this.students = students;
+    }
+
+    public Person() {
+    }
+
+    public Person(ArrayList<Student> students) {
+        this.students = students;
 
     }
 
